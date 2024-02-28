@@ -1,0 +1,56 @@
+/* Global styles */
+body {
+    background:url(images/retro.jpg) ;
+    background-size:cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333333cd;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Change to column layout for smaller screens */
+    margin: 20px;
+}
+
+.left, .right {
+    padding: 10px; /* Add padding to both sides */
+}
+
+.left {
+    padding-left: 300px;
+    order: 1;
+}
+
+.right {
+    padding-right: 300px;
+    order: 2; 
+}
+
+h2 {
+    color: #ffffff;
+    font-size:3.5em;
+}
+
+p {
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* Media query for smaller screens */
+@media screen and (min-width: 768px) {
+    .content {
+        flex-direction: row; /* Switch back to row layout for larger screens */
+    }
+
+    .left, .right {
+        flex: 1; /* Equal width for both sides */
+    }
+}

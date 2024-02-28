@@ -1,0 +1,169 @@
+/* styles.css */
+
+/* Header Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background-color: rgb(86, 110, 97);
+    background: url(images/purchase.jpg!d);
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+}
+header {
+    color: #ffffff;
+    padding: 10px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+h1 {
+    font-family:monospace;
+    margin: 0;
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Section Styles */
+section {
+    padding-top: 5px;
+    padding-bottom : 5px;
+}
+
+h2 {
+    padding-top: 4px;
+    padding-left: 20px;
+    padding-bottom: 2px;
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    transition: color 0.2s,text-shadow 0.3s;;
+}
+h2:hover{
+    color: rgb(255, 129, 129);
+    text-shadow: 1px 1px black;
+}
+h3 {
+    padding-top: 0px;
+    padding-left: 0px;
+    font-size: 1.8em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+h4 {
+    padding-top: 4px;
+    padding-left: 20px;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+ul {
+    list-style: none;
+    padding: 10px;
+}
+
+li {
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Featured Products Styles */
+.featured-products{
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+.product-carousel img {
+    padding: 0px;
+    padding-top: 50px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+}
+
+.product-carousel {
+    padding-top: 10px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden; 
+    scroll-snap-type: x mandatory; 
+    -webkit-overflow-scrolling: touch; 
+}
+
+.product-carousel::-webkit-scrollbar {
+    width: 0;
+  }
+.card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    display: inline-block;
+    width: 300px;
+    height: 250px;
+    background-color: #31323a7f;
+    margin: 10px 10px;
+    border-radius: 2px;
+    transition: transform 0.2s;
+  }
+
+.card:hover {
+    transform: scale(1.1);
+    background-color: #202126c7;
+  }
+
+/* Popular Categories Styles */
+.popular-categories ul {
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.popular-categories li {
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.popular-categories li:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343637e1;
+    border-top: 1px solid #191e23;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+footer li {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+footer li a {
+    color: white;
+    text-decoration: none;
+}
+footer li a:hover {
+    text-decoration: underline;
+}

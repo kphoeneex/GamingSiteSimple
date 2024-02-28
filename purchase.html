@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Platform</title>
+    <link rel="stylesheet" href="purchase.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to purchase section</h1>
+        <p>Your one-stop destination for all your gaming needs</p>
+    </header>
+
+    <div class="featured-products">
+        <h3>Featured Products</h3>
+        <div class="product-carousel">
+            <div class="card">
+            <img src="images/action.jpg"></div>
+            <div class="card">
+            <img src="images/adventure.jpg"></div>
+            <div class="card">
+            <img src="images/roleplay.jpg"></div>
+            <div class="card">
+            <img src="images/strategy.jpg"></div>
+            <div class="card">
+            <img src="images/sports.jpg"></div>
+            <div class="card">
+            <img src="images/simulation.jpg"></div>
+            <div class="card">
+            <img src="images/puzzle.jpg"></div>
+        </div>
+    </div>
+
+    <section class="popular-categories">
+        <h4>Popular Categories</h4>
+        <ul>
+            <li>Action</li>
+            <li>Adventure</li>
+            <li>Role-playing</li>
+            <li>Strategy</li>
+            <li>Sports</li>
+            <li>Simulation</li>
+            <li>Puzzle</li>
+        </ul>
+    </section>
+
+    <section class="latest-releases">
+        <h2>Latest Releases..</h2>
+    </section>
+
+    <section class="special-offers">
+        <h2>Special Offers..</h2>
+    </section>
+
+    <section class="customer-reviews">
+        <h2>Customer Reviews..</h2>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Your JavaScript code here
+
+document.getElementById("scroll-right").addEventListener("click", function() {
+  document.querySelector(".product-carousel").scrollBy({
+    left: 200,
+    behavior: "smooth"
+  });
+});
+
+const container = document.querySelector(".product-carousel");
+let isDragging = false;
+let startX;
+let scrollLeftStart;
+
+container.addEventListener("touchstart", startDrag);
+container.addEventListener("touchmove", drag);
+container.addEventListener("touchend", stopDrag);
+
+function startDrag(event) {
+  event.preventDefault();
+  isDragging = true;
+  startX = event.touches[0].pageX;
+  scrollLeftStart = container.scrollLeft;
+}
+
+function drag(event) {
+  event.preventDefault();
+  if (!isDragging) return;
+  const currentX = event.touches[0].pageX;
+  const distance = startX - currentX;
+  container.scrollLeft = scrollLeftStart + distance;
+}
+
+function stopDrag() {
+  isDragging = false;
+}
+});
+
+
+
+
+
+    </script>
+</body>
+</html>

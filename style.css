@@ -1,0 +1,141 @@
+
+html, body {
+  background-image: url('images/front.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-attachment: fixed;
+  font-family: arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+/* Header */
+ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#header{
+  background-color: #171a2c93;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+}
+#header > ul {
+  padding: 5px;
+  overflow: hidden;
+  float: left;
+  height: 30px;
+}
+#header > ul > li {
+  float: left;
+  margin: 0 10px;
+  font-size: 13px;
+}
+#header img{
+  width: 40px;
+  height: relative;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.btn{
+  float: right;
+  padding: 7px;
+  font-size: 13px;
+  margin: 4px;
+  color: rgb(255, 255, 255);
+  background: radial-gradient(rgb(150, 117, 26),rgb(148, 0, 5));
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: rgb(0, 0, 0);
+}
+form input,form textarea{
+  float: right;
+  width: 10%;
+  border: 0;
+  outline: none;
+  background: #5b5467;
+  padding: 8px;
+  margin: 6px 10px;
+  color: #fff;
+  font-size: 10px;
+  border-radius: 6px;
+}
+.search img{
+  float: right;
+  width: 20px;
+  padding: 5px;
+  height: relative;
+}
+#user img{
+  float: right;
+  width: 20px;
+  height: relative;
+  padding: 10px;
+}
+/* Center */
+#center{
+  padding: 200px 20px;
+}
+.text{
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif ;
+  color: white;
+}
+.btn2{
+  display: inline-block;
+  padding: 5px 12px; 
+  border-width: 1px;
+  border-radius: 3px;
+  margin: 4px;
+  font-size: 20px;
+  background: rgba(28, 63, 73, 0.378);
+  color : rgb(207, 241, 255);
+  border-color: black;
+}
+/* Footer */
+
+#footer {
+  background-color: #f2f2f25c;
+  border-top: 1px solid #191e23;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#footer ul {
+  height: 100%;
+}
+
+#footer li {
+  padding-left: 27px;
+  font-size: small;
+}
+
+#footer li a {
+  color: #ffffff;
+}
+
+#footer-left {
+  float: left;
+}
+
+#footer-right {
+  float: right;
+  padding-right: 27px;
+}
